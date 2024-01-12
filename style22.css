@@ -1,0 +1,214 @@
+/* ไฟล์ style22.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/910fc9cbde8950e0dda1809754acd85b.gif');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    height: 3.5rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url('img/910fc9cbde8950e0dda1809754acd85b.gif');
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+header .logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 0 1rem rgb(255, 0, 0);
+    animation: slideIn 1s ease-out;
+}
+
+.header-menu {
+    display: flex;
+}
+
+.header-menu a {
+    font-weight: 600;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 1rem rgb(255, 16, 16);
+    animation: slideIn 1s ease-out;
+}
+
+.header-menu a:hover {
+    color: rgb(188, 224, 255);
+}
+
+.home {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    padding: 10rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-out;
+    
+}
+.section-img{
+    position: relative;
+    top: 9.9rem;
+    right: 35px;
+    
+}
+.section-img img{
+    width: 100%;
+    height: 100%;
+}
+.section-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 11rem;
+    text-shadow: 0 0 1rem rgb(250, 88, 88);
+    animation: bounceIn 1.5s ease-out;
+}
+.section-text h1{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+.portfolio {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background: #070161;
+    border: 2.5px solid #ffffff;
+}
+.boxportfolio{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: black;
+    border: 2.5px solid #ffffff;
+}
+.portfolio h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 1rem rgb(250, 88, 88);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2.5px solid #ffffff;
+}
+
+.portfolio-item {
+    width: 450px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s forwards;
+    margin-bottom: 2rem;
+    transform: translateY(0);
+}
+
+.portfolio-item-html {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    top: 50rem;
+    left: 250px;
+}
+.portfolio-item-html img{
+    width: 450px;
+}
+.portfolio-item-css {
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 21.4rem;
+    left: 800px;
+    size: 10px;
+}
+.portfolio-item-css img{
+    width: 450px;
+}
+.portfolio-item-js {
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: -7.1rem;
+    left: 1350px;
+    size: 10px;
+}
+.portfolio-item-js img{
+    width: 390px;
+}
+
+.portfolio-item h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.portfolio-item p {
+    margin-top: 0.5rem;
+}
+
+.contact {
+    padding: 5rem 2rem;
+    background: linear-gradient(45deg, #dbdbdb, #3f3f3f);
+    color: #fff;
+    background-image: url('img/mU2LrB.gif');
+    border: 2.5px solid #ffffff;
+}
+.contact-png img{
+    width: 100px;
+}
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: slideIn 1s ease-out;
+}
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: relative;
+    left: 120px;
+    top: -80px;
+    text-shadow: 0 0 1rem rgb(250, 88, 88);
+    animation: slideIn 1s ease-out;
+}
+
+.contact p {
+    margin-bottom: 2rem;
+}
+
+/* เพิ่มสไตล์สำหรับฟอร์มติดต่อ */
